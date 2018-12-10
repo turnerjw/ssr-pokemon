@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Pokemon = props => (
     <div>
         <img src={props.sprites.front_default} />
@@ -14,6 +16,9 @@ const Pokemon = props => (
                 <li key={type.type.name}>{type.type.name}</li>
             ))}
         </ul>
+        <Link href="/index">
+            <a>Back</a>
+        </Link>
     </div>
 );
 
